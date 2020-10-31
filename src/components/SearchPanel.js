@@ -5,12 +5,11 @@ export default function SearchPanel(props) {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    const elements = e.currentTarget;
-    const ob = [...elements].reduce((acc, cur) => {
+    const attr = [...e.currentTarget].reduce((acc, cur) => {
       const { name, value } = cur;
       return { ...acc, [name]: value };
     }, {});
-    props.handleSearch(ob.search);
+    props.handleSearch(attr.search);
     input.current.focus();
   };
 

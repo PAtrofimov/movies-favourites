@@ -47,7 +47,7 @@ function App() {
 
   return (
     <div className="App">
-      <SearchPanel searchText={searchText} handleSearch={handleSearch} />
+      <SearchPanel handleSearch={handleSearch} />
       <Movies movies={filteredMovies} toggleFav={toggleFav} />
     </div>
   );

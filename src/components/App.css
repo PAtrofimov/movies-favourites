@@ -1,0 +1,170 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Arial", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* App */
+
+.App {
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error {
+  padding: 1.5rem 1rem;
+  margin: 1rem;
+  font-size: 2rem;
+  color: #ff4a4a;
+}
+
+.spinner {
+  padding: 1.5rem 1rem;
+  margin: 1rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* end of App */
+
+/* SearchPanel */
+.search-wrapper {
+  position: relative;
+  width: 55rem;
+  display: flex;
+  justify-content: center;
+  margin: 5rem 0 0 0;
+}
+
+.search-field {
+  padding: 1.5rem 2rem;
+  width: 100%;
+  font-size: 1.5rem;
+  border: rgb(238,224,180) .3rem solid;
+  outline: none;
+}
+
+.search-field::placeholder {
+  font-size: 1.5rem;
+}
+
+.search-btn {
+  margin-left: 1.5rem;
+  padding: 1.5rem 2rem;
+  width: 20rem;
+  font-size: 1.5rem;
+  background-color: rgb(255, 230, 205);
+  border: rgb(231,194,151) 0.3rem solid;
+  outline: none;
+}
+
+.clear-btn {
+  position: absolute;
+  height: 100%;
+  width: 3rem;
+  background: none;
+  outline: none;
+  border: none;
+  color: rgb(231,194,151);
+  right: 16rem;
+}
+
+/* end of SearchPanel */
+
+/* Content */
+
+.movies-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 55rem;
+  margin-top: 2rem;
+}
+
+.movie-img-wrapper {
+  display: flex;
+  flex-basis: 10rem;
+  position: relative;
+}
+
+.movie-img {
+  display: block;
+  height: 12rem;
+  width: 12rem;
+  position: absolute;
+  background-color: rgb(255, 230, 205);
+  border: rgb(238,224,180) .3rem solid;
+}
+
+.movie-wrapper {
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+.movie-description {
+  margin-left: 12rem;
+  position: relative;
+}
+
+.movie-title {
+  position: relative;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.heart-unfav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 3rem;
+  line-height: 2rem;
+  color: rgb(221,164,32);
+}
+
+.heart-fav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 3rem;
+  line-height: 2rem;
+  color: rgb(255, 230, 205);
+}
+
+.movie-paragraph {
+  font-size: 1.5rem;
+  display: block;
+  position: relative;
+}
+
+/* end of Content */
+
+/* Favourite Movies */
+.favourite-movies {
+  display: flex;
+}
+
+.favourite-movie {
+  height: 2rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: #ff4a4a;
+  border: orange 0.1rem solid;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+}
+/* end of Favourite Movies */
